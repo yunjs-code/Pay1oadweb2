@@ -1,0 +1,94 @@
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 3rem;
+    background-color: #000000;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; /* Project 컴포넌트의 z-index 설정 */
+    overflow-x: hidden; /* 가로 스크롤 방지 */
+  }
+  
+  .inner {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .inner h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    position: relative;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .project-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4757;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+  }
+  
+  .project-content {
+    padding: 1rem;
+    color: #fff;
+  }
+  
+  .project-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-content p {
+    font-size: 1rem;
+    margin: 0;
+    color: #ccc;
+  }
+  
+  .load-more-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 2rem;
+  }
+  
+  .load-more-button:hover {
+    background-color: #555;
+  }
+  

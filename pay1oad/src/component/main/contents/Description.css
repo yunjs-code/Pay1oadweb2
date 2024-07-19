@@ -1,0 +1,15 @@
+.description-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* 배경색을 검정색으로 설정 */
+  }
+  
+  .description-container h1 {
+    font-size: 2rem; /* 폰트 크기 설정 */
+    color: #d5d5d5; /* 텍스트 색상을 #d5d5d5로 설정 */
+    text-align: center;
+    line-height: 1.5;
+  }
+  

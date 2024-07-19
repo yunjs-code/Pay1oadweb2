@@ -1,0 +1,70 @@
+.description1-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.description1-container h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  position: relative;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 1200px; /* 헤더의 inner 클래스와 동일한 최대 너비 */
+  height: 320px; /* 고정 높이 설정 */
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #444;
+}
+
+.card img {
+  width: 50%; /* 이미지가 카드의 절반 너비를 차지하도록 설정 */
+  height: 100%; /* 이미지가 카드의 전체 높이를 채우도록 설정 */
+  object-fit: cover; /* 이미지의 비율을 유지하면서 카드에 맞게 자르기 */
+  display: block;
+  opacity: 0.8;
+}
+
+.text-overlay {
+  position: relative;
+  width: 50%; /* 텍스트 오버레이가 카드의 절반 너비를 차지하도록 설정 */
+  height: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-overlay .label {
+  display: inline-block;
+  background: #1100ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.text-overlay h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-overlay p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0; /* 여백을 없앰 */
+}
