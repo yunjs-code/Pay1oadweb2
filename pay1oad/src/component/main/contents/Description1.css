@@ -2,17 +2,13 @@
   text-align: center;
   padding: 2rem;
   background-color: #ffffff;
+  height: 100vh;
   color: #fff;
-}
-
-.description1-container h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
 }
 
 .card {
   position: relative;
-  margin: 2rem auto;
+  margin: 4rem auto;
   width: 100%;
   max-width: 1200px; /* 헤더의 inner 클래스와 동일한 최대 너비 */
   height: 320px; /* 고정 높이 설정 */

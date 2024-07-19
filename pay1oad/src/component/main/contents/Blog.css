@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     width: 100vw;    
-    height: 100vh;
     padding: 3rem;
     background-color: #000000;
     box-sizing: border-box;
@@ -21,6 +20,7 @@
   .inner h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
+    margin-top: 4rem;
     color: #fff;
   }
   
@@ -87,6 +87,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 2rem;
+    margin-bottom: 3rem;
   }
   
   .load-more-button:hover {
