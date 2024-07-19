@@ -1,0 +1,51 @@
+.ctf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* 화면 전체 높이로 설정 */
+    padding: 2rem;
+    background-color: #f8fbff;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .ctf-container h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 한 줄에 3개씩 출력 */
+    gap: 1.5rem;
+  }
+  
+  .stat-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  

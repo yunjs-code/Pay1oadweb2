@@ -5,7 +5,7 @@ import Background from './component/main/Background';
 import Description from './component/main/contents/Description';
 import Description1 from './component/main/contents/Description1';
 import Blog from './component/main/contents/Blog';
-import Recruit from './component/main/contents/Recruit';
+import Ctf from './component/main/contents/Ctf';
 import Contact from './component/main/contents/Contact';
 import Login from './component/main/contents/Login';
 
@@ -17,7 +17,7 @@ const App = () => {
       <Description />
       <Description1 />
       <Blog />
-      <Recruit />
+      <Ctf />
       <Contact />
       <Login />
     </div>
