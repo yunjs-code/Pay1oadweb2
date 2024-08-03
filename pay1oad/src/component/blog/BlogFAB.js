@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './BlogFAB.css';
-import { FaEnvelope, FaTimes, FaPlus } from 'react-icons/fa';
+import { FaPencilAlt, FaTimes, FaPlus } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const BlogFAB = () => {
@@ -19,7 +19,7 @@ const BlogFAB = () => {
     <div className="fab-container">
       {isExpanded && (
         <>
-          <div className="fab fab-email" onClick={navigateToWritePost}><FaEnvelope /></div>
+          <div className="fab fab-write" onClick={navigateToWritePost}><FaPencilAlt /></div>
           <div className="fab fab-close" onClick={toggleFAB}><FaTimes /></div>
         </>
       )}

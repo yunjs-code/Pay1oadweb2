@@ -1,67 +1,12 @@
-// src/component/blog/blogmain.js
-
 import React, { useState } from 'react';
 import './blogmain.css';
 import BlogFAB from './BlogFAB'; // Import the BlogFAB component
+import { useBlog } from '../../context/BlogContext'; // Import useBlog
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Blogmain = () => {
-  const posts = [
-    {
-      title: "FULLCAR",
-      description: "신원이 검증된 사람들과 즐겁게 카풀해요!",
-      imgUrl: "path/to/fullcar-image.jpg", // replace with the actual path to the image
-      tags: ["#237기", "#컴퓨터 기초"],
-      category: "컴퓨터 기초",
-      date: "2023-08-01",
-      popularity: 10
-    },
-    {
-      title: "YEOBEE",
-      description: "여행경비 기록부터 정산까지",
-      imgUrl: "path/to/yeobee-image.jpg", // replace with the actual path to the image
-      tags: ["#237기", "#웹"],
-      category: "웹",
-      date: "2023-08-03",
-      popularity: 20
-    },
-    {
-      title: "COFFICE",
-      description: "",
-      imgUrl: "path/to/coffice-image.jpg", // replace with the actual path to the image
-      tags: ["#227기", "#시스템"],
-      category: "시스템",
-      date: "2023-08-02",
-      popularity: 30
-    },
-    {
-      title: "SOMETHING ANDROID",
-      description: "",
-      imgUrl: "path/to/android-image.jpg", // replace with the actual path to the image
-      tags: ["#238기", "#리버싱"],
-      category: "리버싱",
-      date: "2023-07-30",
-      popularity: 5
-    },
-    {
-      title: "ANOTHER POST",
-      description: "",
-      imgUrl: "path/to/image.jpg", // replace with the actual path to the image
-      tags: ["#239기", "#암호학"],
-      category: "암호학",
-      date: "2023-07-29",
-      popularity: 15
-    },
-    {
-      title: "FORENSICS POST",
-      description: "",
-      imgUrl: "path/to/image.jpg", // replace with the actual path to the image
-      tags: ["#240기", "#포렌식"],
-      category: "포렌식",
-      date: "2023-07-28",
-      popularity: 25
-    }
-  ];
-
+  const { posts } = useBlog();
+  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [searchQuery, setSearchQuery] = useState('');
   const [sortOption, setSortOption] = useState('latest');
@@ -76,6 +21,10 @@ const Blogmain = () => {
 
   const handleSortChange = (option) => {
     setSortOption(option);
+  };
+
+  const handleCardClick = (postId) => {
+    navigate(`/post/${postId}`);
   };
 
   const filteredPosts = posts.filter(post => {
@@ -134,7 +83,7 @@ const Blogmain = () => {
         </div>
         <div className="post-grid">
           {sortedPosts.map((post, index) => (
-            <div className="post-card" key={index}>
+            <div className="post-card" key={index} onClick={() => handleCardClick(post.id)}>
               <img src={post.imgUrl} alt={post.title} className="post-image" />
               <div className="post-content">
                 <h2 className="post-title">{post.title}</h2>

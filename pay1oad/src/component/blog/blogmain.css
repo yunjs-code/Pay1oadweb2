@@ -2,7 +2,7 @@
 .blog {
     padding: 20px;
     margin-top: 80px; /* Adjust this value as needed */
-    background-color: #f8f9fa;
+    background-color: #ffffff;
   }
   
   .inner {
@@ -27,6 +27,7 @@
   }
   
   .sort-options {
+
     display: flex;
     gap: 10px;
   }
@@ -43,7 +44,7 @@
   
   .sort-button.active,
   .sort-button:hover {
-    background-color: #ff8c42;
+    background-color: #425eff;
     color: white;
   }
   
@@ -66,7 +67,7 @@
   
   .filter-button.active,
   .filter-button:hover {
-    background-color: #ff8c42;
+    background-color: #5a86ff;
     color: white;
   }
   
