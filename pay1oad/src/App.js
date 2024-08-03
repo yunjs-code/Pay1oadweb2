@@ -4,23 +4,30 @@ import Header from './component/header/Header';
 import Background from './component/main/Background';
 import Description from './component/main/contents/Description';
 import Description1 from './component/main/contents/Description1';
-import Blog from './component/main/contents/Blog';
+import Blogmain from './component/blog/blogmain'; // Import the Blog component
 import Ctf from './component/main/contents/Ctf';
 import Contact from './component/main/contents/Contact';
-import Login from './component/main/contents/Login';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="App">
-      <Background />
-      <Header /> {/* Background 아래에 Header를 위치시킵니다 */}
-      <Description />
-      <Description1 />
-      <Blog />
-      <Ctf />
-      <Contact />
-      <Login />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Background />
+              <Description />
+              <Description1 />
+              <Ctf />
+              <Contact />
+            </>
+          } />
+          <Route path="/blog" element={<Blogmain />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
