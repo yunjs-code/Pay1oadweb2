@@ -1,63 +1,72 @@
 body, html {
-  margin: 0;         /* body와 html 요소의 기본 여백 제거 */
-  padding: 0;        /* body와 html 요소의 기본 패딩 제거 */
-  height: 100%;      /* body와 html 요소의 높이를 100%로 설정 */
-  width: 100%;       /* body와 html 요소의 너비를 100%로 설정 */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .background {
-  position: relative;     /* background 요소를 상대 위치로 설정 */
-  height: 100vh;          /* background 요소의 높이를 뷰포트 높이의 100%로 설정 */
-  display: flex;          /* Flexbox 레이아웃 사용 */
-  justify-content: center;/* 자식 요소들을 수평 중앙에 정렬 */
-  align-items: center;    /* 자식 요소들을 수직 중앙에 정렬 */
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .background::before {
-  content: '';                 /* 내용이 없는 가상 요소 생성 */
-  background-image: url('./Background.png'); /* 배경 이미지 설정 */
-  background-size: cover;      /* 배경 이미지를 요소의 크기에 맞게 조절 */
-  background-position: center; /* 배경 이미지를 중앙에 위치 */
-  position: absolute;          /* 가상 요소를 절대 위치로 설정 */
-  top: 0;                      /* 가상 요소의 상단을 부모 요소의 상단에 맞춤 */
-  left: 0;                     /* 가상 요소의 왼쪽을 부모 요소의 왼쪽에 맞춤 */
-  width: 100%;                 /* 가상 요소의 너비를 100%로 설정 */
-  height: 100%;                /* 가상 요소의 높이를 100%로 설정 */
-  z-index: -1;                 /* 가상 요소를 다른 요소 뒤에 배치 */
+  content: '';
+  background-image: url('./Background.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .header-text {
-  position: absolute;          /* header-text 요소를 절대 위치로 설정 */
-  top: 10%;                    /* header-text 요소의 상단을 부모 요소의 상단에서 10% 떨어진 위치에 설정 */
-  left: 50%;                   /* header-text 요소의 왼쪽을 부모 요소의 왼쪽에서 50% 떨어진 위치에 설정 */
-  transform: translateX(-50%); /* 요소를 수평으로 -50% 이동하여 중앙 정렬 */
-  z-index: 20;                 /* header-text 요소를 다른 요소 위에 배치 */
-  color: #ffffff;              /* 텍스트 색상을 주황색으로 설정 */
-  font-size: 20px;             /* 폰트 크기를 20px로 설정 */
-  font-weight: bold;           /* 텍스트를 굵게 설정 */
-  text-align: center;          /* 텍스트를 중앙 정렬 */
-  text-transform: uppercase;   /* 텍스트를 대문자로 변환 */
-  border: 2px solid #ffffff;   /* 주황색 테두리를 2px 두께로 설정 */
-  padding: 1rem 2rem;          /* 내부 여백을 상하 1rem, 좌우 2rem으로 설정 */
-  border-radius: 2rem;         /* 테두리의 모서리를 둥글게 설정 */
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
 }
 
 .content {
-  position: absolute;          /* content 요소를 절대 위치로 설정 */
-  top: 20%;                    /* content 요소의 상단을 부모 요소의 상단에서 20% 떨어진 위치에 설정 */
-  left: 50%;                   /* content 요소의 왼쪽을 부모 요소의 왼쪽에서 50% 떨어진 위치에 설정 */
-  z-index: 20;                 /* content 요소를 다른 요소 위에 배치 */
-  display: flex;               /* Flexbox 레이아웃 사용 */
-  flex-direction: column;      /* 자식 요소들을 세로 방향으로 배치 */
-  justify-content: center;     /* 자식 요소들을 수직 중앙에 정렬 */
-  align-items: center;         /* 자식 요소들을 수평 중앙에 정렬 */
-  white-space: nowrap;         /* 텍스트가 줄 바꿈되지 않도록 설정 */
-  gap: 2rem;                   /* 자식 요소들 사이의 간격을 2rem로 설정 */
-  transform: translate3d(-50%, -2rem, 0px); /* 요소를 수평으로 -50%, 수직으로 -2rem 만큼 이동 */
-  opacity: 1;                  /* 초기 상태에서 투명도 1로 설정 */
-  transition: transform 2s ease 0s, opacity 2s ease 0s; /* transform과 opacity 속성의 전환 효과를 2초 동안 설정 */
-  color: white;                /* 텍스트 색상을 흰색으로 설정 */
-  font-size: 34px;             /* 폰트 크기를 34px로 설정 */
-  text-align: center;          /* 텍스트를 중앙 정렬 */
-  margin-bottom: 0;            /* 하단 여백을 0으로 설정 */
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  gap: 2rem;
+  transform: translate3d(-50%, -2rem, 0px);
+  opacity: 1;
+  transition: transform 2s ease 0s, opacity 2s ease 0s;
+  color: white;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100px); }
+}
+
+.moving-element {
+  animation: move 2s infinite;
 }

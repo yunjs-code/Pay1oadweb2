@@ -1,0 +1,126 @@
+.post-detail-container {
+    max-width: 600px;
+    margin: 100px auto 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .post-author-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .author-name {
+    font-weight: bold;
+  }
+  
+  .post-date {
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  .post-content {
+    margin-bottom: 20px;
+  }
+  
+  .post-detail-tags-like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .post-detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .post-detail-tag {
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
+  }
+  
+  .like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .liked {
+    color: red;
+  }
+  
+  .not-liked {
+    color: gray;
+  }
+  
+  .comments-section {
+    margin-top: 40px; /* post-actions와의 간격 추가 */
+  }
+  
+  .comments-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .comment {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+  }
+  
+  .comment-author {
+    font-weight: bold;
+  }
+  
+  .comment-date {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  .comment-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .comment-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .comment-submit-button {
+    background-color: #3e8eff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
